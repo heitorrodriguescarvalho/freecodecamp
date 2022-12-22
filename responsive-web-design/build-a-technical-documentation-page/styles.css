@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Montserrat:wght@400;500&display=swap');
+
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto;
+    }
+}
+
+html {
+    font-size: calc((1vw + 1vh) * 0.75);
+    font-family: "Montserrat", sans-serif;
+    color: rgb(200, 200, 200);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media (min-width: 600px) {
+    #nav-bar {
+        display: flex;
+    }
+
+    #main-doc {
+        width: 80%;
+    }
+
+    #titulo-alternativo {
+        display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #main-doc {
+        width: 100%;
+    }
+
+    #titulo-alternativo {
+        display: block;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#nav-bar {
+    flex-direction: column;
+    background-color: #262626;
+    width: 20%;
+    overflow-y: scroll;
+}
+
+#nav-bar a, #nav-bar header {
+    display: block;
+}
+
+#nav-bar header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 50px 0;
+    height: 10%;
+}
+
+#nav-bar header h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#nav-bar a {
+    height: 5.7%;
+    margin: 15px 30px 0 10px;
+    padding: 0 0 15px 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color:rgb(200, 200, 200);
+}
+
+#nav-bar a:not(:last-of-type) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#nav-bar a:visited {
+    color:rgb(200, 200, 200);
+}
+
+#main-doc {
+    background-color: #2e2e2e;
+    overflow-y: scroll;
+    padding: 35px;
+}
+
+#titulo-alternativo {
+    text-align: center
+}
+
+h2 {
+    padding: 35px 0 20px 20px;
+}
+
+p, li {
+    text-align: justify;
+    padding: 0 0 10px 0;
+    text-indent: 20px;
+}
+
+pre {
+    background-color: rgb(0, 0, 0);
+    white-space: pre-line;
+    font-family: 'Chivo Mono', monospace;
+    padding: 0 0 0 20px;
+    margin: 10px 0 25px 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Pesquisa</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1 id="title">Pesquisa</h1>
+                <p id="description">Obrigado por contribuir com a sua opinião</p>
+            </section>
+            <section>
+                <form id="survey-form">
+                    <fieldset>
+                        <legend>Preencha seus dados...</legend>
+                        <label for="name" id="name-label" class="dados">Nome
+                            <input type="text" id="name" placeholder="Digite seu nome..." required>
+                        </label>
+                        <label for="email" id="email-label" class="dados">Email
+                            <input type="email" id="email" placeholder="Digite seu email..." required>
+                        </label>
+                        <label for="number" id="number-label" class="dados">Telefone
+                            <input type="number" id="number" min="100000000" max="1000000000000" placeholder="Digite seu telefone..." required>
+                        </label>
+                        <label for="dropdown"> Qual destas opções melhor descreve sua função?
+                            <select id="dropdown" class="dados">Qual opção melhor descreve sua função atual?
+                                <option value="">Selecione um</option>
+                                <option value="1">Estudante</option>
+                                <option value="2">Empregado</option>
+                                <option value="3">Aposentado</option>
+                                <option value="4">Outro</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>A tecnologia se faz presente onde você exerce sua função?</legend>
+                        <div class="question1">
+                            <input type="radio" name="answer-button" value="yes" id="answer-yes">
+                            <label for="answer-yes">Sim</label>
+                        </div>
+                        <div class="question1">
+                            <input type="radio" name="answer-button" value="no" id="answer-no" checked>
+                            <label for="answer-no">Não</label>
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Quais destas tecnologias, na sua opinião, poderiam ser usadas onde você exerce sua função?</legend>
+                        <label for="checkbox-automacao">
+                            <input type="checkbox" name="tecnologias-checkbox" value="automacao" id="checkbox-automacao" name="checkbox-automacao">Automação
+                        </label>
+                        <label for="checkbox-ia">
+                            <input type="checkbox" name="tecnologias-checkbox" value="ia" id="checkbox-ia" name="checkbox-ia">Inteligência artificial
+                        </label>
+                        <label for="checkbox-impressao3d">
+                            <input type="checkbox" name="tecnologias-checkbox" value="impressao3d" id="checkbox-impressao3d" name="checkbox-impressao3d">Impressão 3D
+                        </label>
+                        <label for="checkbox-rv">
+                            <input type="checkbox" name="tecnologias-checkbox" value="rv" id="checkbox-rv" name="checkbox-rv">Realidade virtual/aumentada
+                        </label>
+                        <label for="checkbox-homeoffice">
+                            <input type="checkbox" name="tecnologias-checkbox" value="homeoffice" id="checkbox-homeoffice" name="checkbox-homeoffice">Home office
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Descreva como essas tecnologias poderiam ser aplicadas onde você exerece sua função.</legend>
+                        <textarea id="text" cols="30" rows="5" placeholder="Descreva aqui..."></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" id="submit">Concluir</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

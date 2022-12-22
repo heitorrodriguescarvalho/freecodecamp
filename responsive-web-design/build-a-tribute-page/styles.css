@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: max(20px, 12px + 0.25vw);
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #737372;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+main {
+    margin: 2% auto;
+    max-width: 1120px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    box-shadow: 10px 8px 20px 8px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    padding: 5% 0;
+}
+
+#title {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #595959;
+}
+
+#subtitle {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+#img-div {
+    padding: 2%;
+    display: block;
+    width: 100%;
+    background-color: #8C8C8C;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#img-caption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 2.5%;
+}
+
+#image {
+    display: block;
+    margin-bottom: 25px;
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#img-div > label {
+    display: block;
+    font-size: max(13px, 6px + 0.1vw);
+    text-align: center;
+}
+
+#text-section, #footer-section {
+    padding: 5% 65px 0 65px;
+}
+
+#text-section h2 {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 35px;
+}
+
+.text {
+    padding-bottom: 90px;
+}
+
+.text:last-of-type {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.text p {
+    padding-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.text p:last-of-type {
+    padding-bottom: 0;
+}
+
+ul {
+    padding: 0 0 25px 35px;
+}
+
+#footer-section {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+a {
+    color: #737372;
+}
+
+a:hover {
+    font-size: 1.025em;
+    color: #5a5a5a;
+}
