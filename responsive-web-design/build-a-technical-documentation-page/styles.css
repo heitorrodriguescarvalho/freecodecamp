@@ -54,6 +54,7 @@ body {
     padding: 0;
     margin: 0;
     border: none;
+    text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -115,14 +116,52 @@ h2 {
 
 p, li {
     text-align: justify;
-    padding: 0 0 10px 0;
+    padding-bottom: 10px;
+}
+
+p {
     text-indent: 20px;
 }
 
+li {
+    margin-left: 75px;
+    list-style: square;
+}
+
+li > ul > li {
+    margin-left: 40px;
+}
+
+li > ul > li::marker {
+    color: gray;
+}
+
+li > ul > li:first-of-type {
+    margin-top: 20px;
+}
+
+pre > ul > li:first-of-type {
+    margin-top: 20px;
+}
+
 pre {
-    background-color: rgb(0, 0, 0);
+    background-color: #262626;
     white-space: pre-line;
     font-family: 'Chivo Mono', monospace;
-    padding: 0 0 0 20px;
+    padding-left: 20px;
+    margin-left: 40px;
     margin: 10px 0 25px 0;
+    border-radius: 10px;
+    width: 97.5%;
+    position: relative;
+    left: 20px;
+}
+
+#main-doc a {
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+
+#main-doc a:visited {
+    color: rgb(200, 200, 200);
 }
