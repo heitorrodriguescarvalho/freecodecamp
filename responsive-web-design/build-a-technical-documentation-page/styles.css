@@ -79,7 +79,7 @@ body {
 }
 
 #nav-bar header h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -124,12 +124,12 @@ p {
 }
 
 li {
-    margin-left: 75px;
+    margin-left: calc(4vw + 20px);
     list-style: square;
 }
 
 li > ul > li {
-    margin-left: 40px;
+    margin-left: calc(2vw + 20px);
 }
 
 li > ul > li::marker {
@@ -142,6 +142,10 @@ li > ul > li:first-of-type {
 
 pre > ul > li:first-of-type {
     margin-top: 20px;
+}
+
+pre > ul > li {
+    margin-left: calc(1.5vw + 10px);
 }
 
 pre {
