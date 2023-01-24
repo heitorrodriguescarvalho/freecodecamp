@@ -54,12 +54,20 @@ header {
     margin-right: 5%;
 }
 
-#navbar p {
-    color: white;
-    padding-left: 10vw;
+#navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
 
-#navbar p:hover {
+#navbar p {
+    color: white;
+    text-align: center;
+    width: 10vw;
+}
+
+#navbar a:hover p {
     color: white;
     animation: hover 100ms ease-in-out 1 forwards;
 }
