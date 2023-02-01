@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	font-family: "Raleway", sans-serif;
+}
+
+#quote-box {
+	max-width: 550px;
+	width: 84vw;
+	margin: -8vh 8vw 0 8vw;
+	padding: 5vh 3.5vw;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#text {
+    display: inline-block;
+	width: 100%;
+	min-height: 60px;
+	text-align: center;
+	font-size: 20pt;
+	font-weight: 500;
+}
+
+#author {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	text-align: right;
+}
+
+#buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+}
+
+.button-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 75%;
+	width: 50%;
+}
+
+.button-container:nth-of-type(1) {
+	justify-content: flex-start;
+}
+
+.button-container:nth-of-type(2) {
+	justify-content: flex-end;
+}
+
+.button {
+	height: 100%;
+	border-radius: 3px;
+	color: white;
+	font-size: 10pt;
+	cursor: pointer;
+}
+
+.button:hover {
+	animation: buttonHover 300ms ease-in 1 forwards;
+}
+
+#tweet-quote, #tumblr-quote {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1/1;
+	font-size: 15pt;
+}
+
+#tumblr-quote {
+	margin: 0 3.5%;
+}
+
+#new-quote {
+	aspect-ratio: 5/2;
+}
+
+#quotation-marks {
+    margin-right: 10px;
+}
+
+#credits {
+	margin-top: 10px;
+	color: white;
+	font-size: 10pt;
+	font-weight: 300;
+}
+
+#credits .first-letter {
+	font-weight: 200;
+}
+
+#github-link {
+	color: white;
+}
+
+#github-link:hover {
+	animation: creditsHover 100ms ease-in-out 1 forwards;
+}
+
+.color0 {
+    background-color: #16a085;
+    transition: background-color 1s 0s linear;
+}
+
+.color1 {
+    background-color: #27ae60;
+    transition: background-color 1s 0s linear;
+}
+
+.color2 {
+    background-color: #2c3e50;
+    transition: background-color 1s 0s linear;
+}
+
+.color3 {
+    background-color: #f39c12;
+    transition: background-color 1s 0s linear;
+}
+
+.color4 {
+    background-color: #e74c3c;
+    transition: background-color 1s 0s linear;
+}
+
+.color5 {
+    background-color: #9b59b6;
+    transition: background-color 1s 0s linear;
+}
+
+.color6 {
+    background-color: #FB6964;
+    transition: background-color 1s 0s linear;
+}
+
+.color7 {
+    background-color: #342224;
+    transition: background-color 1s 0s linear;
+}
+
+.color8 {
+    background-color: #472E32;
+    transition: background-color 1s 0s linear;
+}
+
+.color9 {
+    background-color: #BDBB99;
+    transition: background-color 1s 0s linear;
+}
+
+.color10 {
+    background-color: #77B1A9;
+    transition: background-color 1s 0s linear;
+}
+
+.color11 {
+    background-color: #73A857;
+    transition: background-color 1s 0s linear;
+}
+
+.colorDefault {
+    background-color: #000;
+    transition: background-color 1s 0s linear;
+}
+
+@keyframes creditsHover {
+	from {
+		font-size: 10pt;
+	}
+	to {
+		font-size: 10.1pt;
+	}
+}
+
+@keyframes buttonHover {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 80%;
+	}
+}

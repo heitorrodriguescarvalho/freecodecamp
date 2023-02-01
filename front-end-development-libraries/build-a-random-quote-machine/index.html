@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
+		<title>Project</title>
+	</head>
+	<body class="colorDefault">
+		<div id="quote-box">
+			<div id="quote-text">
+				<p id="text"></p>
+			</div>
+			<p id="author"></p>
+			<div id="buttons">
+				<div class="button-container">
+					<a
+						id="tweet-quote"
+						class="button"
+						title="Tweet this quote!"
+						href="#"
+						target="_blank">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a
+						id="tumblr-quote"
+						class="button"
+						title="Post this quote on Tumblr"
+						href="#"
+						target="_blank">
+						<i class="fa fa-tumblr"></i>
+					</a>
+				</div>
+				<div class="button-container">
+					<button
+						id="new-quote"
+						class="button"
+						onclick="getNewQuoteAuthorAndColor()">
+						New quote
+					</button>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div id="credits">
+				<span class="first-letter">by</span>
+				<a
+					id="github-link"
+					href="https://github.com/heitorrodriguescarvalho/"
+					>Heitor Rodrigues Carvalho</a
+				>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
