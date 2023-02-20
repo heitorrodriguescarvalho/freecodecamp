@@ -1,6 +1,7 @@
 {
   "name": "build-a-markdown-previewer",
   "version": "0.1.0",
+  "homepage": "build-a-markdown-previewer/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
