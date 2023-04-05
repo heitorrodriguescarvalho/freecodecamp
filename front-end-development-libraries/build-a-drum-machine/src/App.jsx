@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
 
 import Drums from "./Components/Drums";
 import Controls from "./Components/Controls";
