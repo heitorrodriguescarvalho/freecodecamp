@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+:root {
+  --page-background: #363845;
+  --content-background: #363842;
+  --content-border: 3px solid #474956;
+  --title-color: #a935e2;
+  --title-background: #292c36;
+  --text-box-background: #292a35;
+  --text-color: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+
+  background-color: var(--page-background);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+
+.calculator {
+  height: 500px;
+  width: 400px;
+
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--content-background);
+  border: var(--content-border);
+}
+
+.Display {
+  flex-basis: 25%;
+
+  width: 100%;
+
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+
+  color: var(--text-color);
+  background-color: var(--text-box-background);
+}
+
+.formula {
+  flex-basis: 30%;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-align: right;
+
+  color: var(--title-color);
+}
+
+#display {
+  flex-basis: 75%;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+
+  overflow: hidden;
+  text-align: right;
+  font-size: 28px;
+}
+
+.Keys {
+  flex-basis: 70%;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  background-color: var(--text-box-background);
+}
+
+.key-rows {
+  flex-basis: 75%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.key-row {
+  flex-basis: 20%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.key-row > .key {
+  flex-basis: calc(100% / 3);
+  height: 100%;
+}
+
+.key-column {
+  flex-basis: 25%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.key-column > .key {
+  flex-basis: 20%;
+  width: 100%;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  color: var(--text-color);
+}
+
+.key:not(#clear, #equals):hover {
+  background-color: #23232e;
+}
+
+.key:hover {
+  filter: brightness(1.8);
+}
+
+#clear {
+  flex-basis: calc((100% / 3) * 2);
+
+  background-color: rgb(150, 0, 0, 0.8);
+}
+
+#equals {
+  flex-basis: 40%;
+
+  background-color: rgba(0, 0, 150, 0.8);
+}
+
+#zero {
+  flex-basis: calc((100% / 3) * 2);
+}
