@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&family=Noto+Sans+Mono&display=swap');
+
+:root {
+  --page-background: #363845;
+  --content-background: #363842;
+  --content-border: 3px solid #474956;
+  --title-color: #a935e2;
+  --title-background: #292c36;
+  --text-box-background: #292a35;
+  --text-color: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-color);
+  background: var(--page-background);
+}
+
+.App {
+  width: 80vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: "Kanit", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+  background: var(--content-background);
+  border: var(--content-border);
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: 300;
+}
+
+.lucide-clock {
+  margin-bottom: -1px;
+}
+
+.break_session {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.break-controls,
+.session-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+strong {
+  font-size: 28px;
+}
+
+.Progress {
+  height: 35%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Progress > .content {
+  position: relative;
+  height: 85%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--text-box-background);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#time-left {
+  width: 100%;
+  padding-top: 10px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 42px;
+  text-align: center;
+}
+
+#timer-label {
+  font-size: 18px;
+}
+
+.Controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.lucide-refresh-cw {
+  margin-top: -8px;
+}
+
+.lucide:not(.lucide-clock) {
+  cursor: pointer;
+}
+
+.lucide:not(.lucide-clock):hover {
+  filter: brightness(0.8);
+  transform: scale(1.06);
+}
